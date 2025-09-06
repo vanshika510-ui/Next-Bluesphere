@@ -1,0 +1,354 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #f7f9fc;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #003366;
+  color: #fff;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  transition: 0.3s;
+}
+
+.sidebar h2.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: left;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #00ccff;
+}
+
+/* Topbar */
+.topbar {
+  width: 100%;
+  height: 60px;
+  background: #005599;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 220px;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.topbar .toggle-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.topbar .top-nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.topbar .top-nav a:hover {
+  color: #ffcc00;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 220px;
+  margin-top: 60px;
+  padding: 20px;
+  width: calc(100% - 220px);
+}
+
+.section {
+  padding: 50px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.section h1, .section h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  background: #003366;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background: #005599;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #003366;
+  color: #fff;
+  margin-top: 40px;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("ocean.jfif") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: #fff; /* white text looks better on dark ocean bg */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 40, 80, 0.6); /* dark blue transparent overlay */
+  z-index: -1; /* keeps overlay behind your content */
+}
+/* Hero Section Styling */
+#home h1 {
+  font-size: 3rem;
+  text-align: center;
+  animation: shine 3s infinite alternate;
+  text-shadow: 0 0 10px #00ccff, 0 0 20px #0099cc, 0 0 30px #006699;
+}
+
+#home p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 10px;
+  color: #ffdd55;
+  font-weight: bold;
+  animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+#home img {
+  display: block;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 25px #00ccff;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes shine {
+  from { text-shadow: 0 0 5px #00ccff, 0 0 10px #0099cc; }
+  to { text-shadow: 0 0 20px #00ffff, 0 0 40px #33ccff; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #003366;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #005599;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+}
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.audience-box {
+  background: linear-gradient(135deg, #00ccff, #0066ff);
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.audience-box:hover {
+  transform: translateY(-8px);
+}
+/* Vibrant animated headings with graceful fallback */
+h1, h2 {
+  font-weight: 800;
+  text-align: center;
+
+  /* Fallback for browsers that don't support gradient text */
+  color: #00e0ff;
+  text-shadow: 0 0 8px rgba(0, 224, 255, 0.6),
+               0 0 16px rgba(0, 102, 255, 0.45);
+
+  /* Animated gradient background (used when clip-to-text is supported) */
+  background-image: linear-gradient(90deg, #00ccff, #0066ff, #00ffcc);
+  background-size: 200% auto;
+  animation: heading-sheen 6s linear infinite;
+
+  /* WebKit gradient text (Chrome/Edge/Safari) */
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Slightly larger hero heading */
+#home h1 { font-size: 3rem; }
+
+/* Tagline glow/animation (optional) */
+#home p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 10px;
+  color: #ffdd55;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 221, 85, 0.8);
+  animation: tagline-pulse 3s ease-in-out infinite alternate;
+}
+
+/* Hero image float effect */
+#home img {
+  display: block;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 204, 255, 0.7);
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes heading-sheen {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+@keyframes tagline-pulse {
+  from { opacity: 0.75; transform: translateY(0); }
+  to   { opacity: 1;    transform: translateY(-2px); }
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+#innovation .card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+#innovation .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 204, 255, 0.5);
+  border: 1px solid #00ccff;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueSphere</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    
+    <ul>
+      <li><a href="/home.html">🏠 Home</a></li>
+      <li><a href="/about.html">ℹ️ About Us</a></li>
+      <li><a href="/innovation.html">💡 Innovations</a></li>
+      <li><a href="/features.html">⚙️ Features</a></li>
+      <li><a href="/audience.html">👥 Target Audience</a></li>
+      <li><a href="/contact.html">📞 Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <div class="top-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#innovation">Innovation</a>
+      <a href="#features">Features</a>
+      <a href="#audience">Audience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content">
+    
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <h1>BlueSphere</h1>
+      <p>Making ocean intelligence conversational, visual, and inclusive.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/ARGO_float.jpg" alt="Argo Floats" class="hero-img">
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>
+        FloatChat is an AI-powered conversational interface that allows researchers, policymakers,
+        and communities to query, explore, and visualize ARGO float ocean data in plain English.
+        By combining Large Language Models (LLMs), vector databases, and geospatial dashboards,
+        FloatChat democratizes access to complex oceanographic datasets.
+      </p>
+    </section>
+
+    <!-- Innovation Section -->
+    <section id="innovation" class="section">
+  <h2>💡 Our Innovations</h2>
+  <div class="features-grid">
+    <div class="card">
+      <h3>🧠 Conversational AI</h3>
+      <p>Transforms natural language into SQL queries, making ocean data accessible without coding.</p>
+    </div>
+    <div class="card">
+      <h3>🌍 Dynamic Visualizations</h3>
+      <p>Interactive maps, trajectories, and depth-time plots bring ARGO data to life in real time.</p>
+    </div>
+    <div class="card">
+      <h3>🗣️ Inclusivity Layer</h3>
+      <p>Multi-language support and voice-enabled features ensure accessibility for all communities.</p>
+    </div>
+    <div class="card">
+      <h3>⚠️ Proactive Disaster Alerts</h3>
+      <p>Instant recognition of cyclone, tsunami, and flooding risks with urgent safety notifications.</p>
+    </div>
+    <div class="card">
+      <h3>🎮 Gamified Learning</h3>
+      <p>AI tutor mode and interactive learning make ocean science engaging for students worldwide.</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="card">
+          <h3>🌊 Conversational Q&A</h3>
+          <p>Ask questions in natural language and get precise answers with data visualizations.</p>
+        </div>
+        <div class="card">
+          <h3>📊 Dynamic Visualizations</h3>
+          <p>View salinity, temperature, and trajectories on interactive dashboards.</p>
+        </div>
+        <div class="card">
+          <h3>⚠️ Disaster Recognition</h3>
+          <p>Detects disaster-related keywords and provides urgent alerts for safety.</p>
+        </div>
+        <div class="card">
+          <h3>🗣️ Multi-language Support</h3>
+          <p>Supports Hindi, Tamil, Bengali, and English for wider accessibility.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section id="audience" class="section">
+      <h2>Target Audience</h2>
+      <p>
+        FloatChat is designed for a diverse range of users including:
+      </p>
+      <div class="audience-grid">
+  <div class="audience-box">🌍 Researchers & Scientists</div>
+  <div class="audience-box">🏛️ Policymakers & Disaster Management</div>
+  <div class="audience-box">🎓 Educators & Students</div>
+  <div class="audience-box">👨‍👩‍👧 Coastal Communities</div>
+  <div class="audience-box">⚓ Marine & Defence Organizations</div>
+</div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 FloatChat | Built for SIH 2025 | Climate Action & Ocean Intelligence</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
